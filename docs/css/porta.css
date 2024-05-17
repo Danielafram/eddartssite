@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+.logo {
+    color: #FFE876;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.navbar {
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    margin-right: 50px;
+    position: absolute;
+
+}
+.navbar li {
+    cursor: pointer;
+  
+    transition: 0.3 ease;
+}
+.navbar li img {
+    width: 40px;
+}
+.hidden {
+    position: absolute;
+    display: none;
+}
+.hidden li {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5));
+    padding: 20px;
+    width: 190px;
+    transform: translateX(-120px);
+}
+.hidden li a {
+    color: #FFE876;
+    position: relative;
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+
+.show:hover >.hidden {
+    display: block;
+}
+
+header .logo {
+    color: #FFE876;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header .navbar {
+    position: relative;
+}
+header .navbar .hidden li:before {
+    content: '';
+    position: absolute;
+    background: #BC9AC8;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navbar .hidden li:hover:before {
+    width: 100%;
+    
+}
+header .navbar .hidden a:hover{
+    color: #BC9AC8;
+}
+section {
+    padding: 193px;
+}
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100hv;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5)), url(../imgs/Banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+}
+.home::before {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(transparent, rgba(188, 154, 200, 1)); ;
+}
+ .home .content {
+    z-index: 888;
+    width: 70%;
+    margin-top: 50px;
+    
+ }
+
+ .home .content h1 {
+    color: #82368C;
+    font-size: 90px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.445);
+    margin-bottom: 40px;
+ }
+ .home .content p {
+    margin-bottom: 65px;
+    color: #FFE876;
+    font-size: 18px;
+    font-weight: 500;
+    
+ }
+ .container {
+    background: #BC9AC8;
+    padding: 70px 10px 20px 0px
+
+ }
+.nombres {
+    
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 50px;
+ }
+.sliders {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+ }
+
+ main { 
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .porfolios {
+    padding: 80px 0px;
+    text-align: center;
+   
+    display: flex;
+    flex-direction: column;
+
+}
+.porfolios h3 {
+    font-size: 40px;
+    color: #95569E;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.porfolios h2 {
+    font-size: 55px;
+    color: #FFDE00;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.445);
+}
+.porfolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.porfolio .img-slider {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    background: #BC9AC8; /*CAMBIAR A ELECCIÓN*/
+    
+}
+.porfolio .img-slider .slide {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+
+}
+.porfolio .img-slider .slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+
+}
+.porfolio .img-slider .slide img {
+    z-index: 1;
+    width: 100%;
+    border-radius: 20px;
+}
+.img-slider .navigation {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.img-slider .navigation .btn {
+    background:  rgba(14, 14, 14, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.img-slider .navigation .btn.active {
+    background: #95569E;
+    box-shadow: 0 0 2px rgba(14, 14, 14, 0.5);
+}
+.porfolio .img-sliderr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    background: #BC9AC8;
+   
+  
+    
+}
+.porfolio .img-sliderr .slidee {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+    
+
+}
+.porfolio .img-sliderr .slidee.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+
+}
+.porfolio .img-sliderr .slidee img {
+    z-index: 1;
+    width: 100%;
+    border-radius: 20px;
+}
+.img-sliderr .navigationn {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.img-sliderr .navigationn .btnn {
+    background:  rgba(14, 14, 14, 0.5); 
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.img-sliderr .navigationn .btnn.active {
+    background: #95569E;
+    box-shadow: 0 0 2px rgba(14, 14, 14, 0.5);
+}
+.porfolio-1 {
+    text-align: left;
+    margin-left: 100px;
+}
+
+.porfolio-2 {
+    text-align: left;
+    margin-left: 100px;
+}
+
+footer {
+    padding: 10px;
+    background: url(../imgs/Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.random {
+    display: flex;
+    justify-content: center;
+}
+.random a {
+    color: #82368C;
+    font-size: 15px;
+    font-weight: 700;
+}
+.random a:hover {
+    color: #FFDE00;
+}

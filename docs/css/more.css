@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #bebebe;
+}
+.container {
+    max-width: 1200px;
+    margin: 10px auto;
+}
+.header {
+    background-image: url(../imgs/tierrabanner.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    align-items: center;
+    display: flex;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo {
+    color: #FFE876;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.navbar {
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    margin-right: 50px;
+    position: absolute;
+}
+.navbar li {
+    cursor: pointer;
+    padding: 20px;
+    transition: 0.3 ease;
+}
+.navbar li img {
+    width: 40px;
+}
+.hidden {
+    position: absolute;
+    display: none;
+    transform: translateY(20px);
+}
+.hidden li {
+    border-bottom: solid 1px #fff;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.5));
+    padding: 20px;
+    width: 190px;
+    transform: translateX(-100px);
+}
+.hidden li a {
+    color: #FFE876;
+}
+.hidden li:hover {
+    background-color: #fff;
+}
+.show:hover >.hidden {
+    display: block;
+}
+
+.header-txt {
+    text-align: center;
+}
+.header-txt h1 {
+    font-size: 85px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.header-txt p {
+    color: #bebebe;
+    font-size: 16px;
+    padding: 0 250px;
+    margin-bottom: 45px;
+}
+
+
+.general {
+    padding: 50px 0;
+    text-align: center;
+
+
+}
+.general-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 55px 0;
+}
+.general-1 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.212), rgba(255, 255, 255, 0.4)), url(../imgs/tierra1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 30px 55px;
+    margin: 0 5px;
+    border-radius: 15px;
+}
+.general-2 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.212), rgba(255, 255, 255, 0.4)), url(../imgs/tierra2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 30px 55px;
+    margin: 0 5px;
+    border-radius: 15px;
+}
+.general-3 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.212), rgba(255, 255, 255, 0.4)), url(../imgs/tierra3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 30px 55px;
+    margin: 0 5px;
+    border-radius: 15px;
+}
+.general-4 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.212), rgba(255, 255, 255, 0.4)), url(../imgs/tierra4.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 30px 55px;
+    margin: 0 5px;
+    border-radius: 15px;
+}
+.general-5 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.212), rgba(255, 255, 255, 0.4)), url(../imgs/tierra5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 30px 55px;
+    margin: 0 5px;
+    border-radius: 15px;
+}
+.general-6 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.212), rgba(255, 255, 255, 0.4)), url(../imgs/tierra6.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 30px 55px;
+    margin: 0 5px;
+    border-radius: 15px;
+}
+.general-7 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.212), rgba(255, 255, 255, 0.4)), url(../imgs/tierra7.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 30px 55px;
+    margin: 0 5px;
+    border-radius: 15px;
+}
+.general-8 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.212), rgba(255, 255, 255, 0.4)), url(../imgs/tierra8.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    padding: 30px 55px;
+    margin: 0 5px;
+    border-radius: 15px;
+}
+
+h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: 18293a;
+}
+.txt h3 {
+    font-size: 18px;
+    color: fffdfc;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.txt p {
+    color: #161616;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.info-1 {
+    padding: 280px 0;
+    background-image: url(../imgs/tierrabanner2.avif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 55px;
+}
+.info-content {
+    text-align: center;
+}
+.info-content h2 {
+    color: #fffdfc;
+}
+.info-circulo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+.info-txt {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+
+}
+.circulo-1 {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding-top: 20px;
+}
+.circulo-1 img {
+    width: 60px;
+}
+.circulo-txt p {
+    color: #bebebe;
+    margin-top: 50px;
+}
+.info-2{
+    padding: 250px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.589)),url(../imgs/3.avif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+.testi {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-top: 35px;
+}
+.testi-left {
+    width: 50%;
+    padding-right: 25px;
+}
+.testi-right {
+    width: 50%;
+    padding-left: 35px;
+}
+.testi-txt {
+    margin-bottom: 25px;
+}
+.testi-txt img {
+    width: 250px;
+    margin-bottom: 15px;
+    border-radius: 200px;
+}
+.testi-txt h3{
+    color: #fff;
+}
+.testi-txt p {
+    color: #ebebeb;
+    font-size: 16px;
+}
+footer {
+    padding: 10px;
+    background: url(../imgs/Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.random {
+    display: flex;
+    justify-content: center;
+}
+.random a {
+    color: #82368C;
+    font-size: 15px;
+    font-weight: 700;
+}
+.random a:hover {
+    color: #FFDE00;
+}
