@@ -95,6 +95,7 @@ section {
     padding: 193px;
 }
 .home {
+    background-attachment:fixed;
     position: relative;
     width: 100%;
     min-height: 100hv;
@@ -106,7 +107,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 0;
-    background-attachment: fixed;
+    
 }
 .home::before {
     z-index: 1;
