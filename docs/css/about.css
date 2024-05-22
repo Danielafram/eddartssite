@@ -220,3 +220,46 @@ footer {
 .random a:hover {
     color: #FFDE00;
 }
+@media (max-width:991px){
+    header {
+        padding: 35px 50px;
+    }  
+    .navbar {
+        margin: 0 100px 0 200px;
+    
+    }
+    main {
+        padding: 193px;
+    }
+    .home {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 200px 30px;
+    }  
+     .home .content h1 {
+        font-size: 70px;
+
+     }
+
+     .about {
+        text-align: center;
+     }
+     .porfolio {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+     }
+     .porfolio-1 {
+        text-align: center;
+        margin-right: 100px;
+        margin-top: 50px;
+    }
+    .porfolio-2 {
+        text-align: center;
+        margin-left: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+ }
