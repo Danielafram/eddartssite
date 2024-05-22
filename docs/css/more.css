@@ -307,3 +307,71 @@ footer {
 .random a:hover {
     color: #FFDE00;
 }
+
+@media (max-width:991px){
+    header {
+        padding: 100px 50px;
+    }  
+    .header-txt h1 {
+        font-size: 65px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .header-txt p {
+        color: #bebebe;
+        font-size: 16px;
+        padding: 0 10px;
+        margin-bottom: 45px;
+    }
+    .navbar {
+        margin: 0 100px 0 200px;
+    
+    }
+    .logo {
+        margin: 25px;
+    }
+    .header-txt {
+        flex-direction: column;
+        text-align: center;
+    }
+    .general {
+        display: flex;
+        flex-direction: column;
+    }
+    .general-content {
+        flex-direction: column;
+        padding: 30px;
+
+    }
+    .info-1 {
+        flex-direction: column;
+        background-attachment: fixed;
+    }
+    .info-content .info-circulo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-content .info-circulo p {
+        float: right;
+        text-align: center;
+        color: #fff;
+    }
+    .info-2 .testi {
+         flex-direction: column;
+         text-align: center;
+         align-items: center;
+
+    }
+    .testi-left {
+        width: 100%;
+        padding: 50px;
+    }
+    .testi-right {
+        width: 100%;
+        padding: 50px;
+    }
+    h2 {
+        font-size: 50px;
+        padding: 0 50px;
+    }
+}
