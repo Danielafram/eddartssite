@@ -106,6 +106,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 0;
+    background-attachment: fixed;
 }
 .home::before {
     z-index: 1;
