@@ -170,4 +170,43 @@ main {
     font-weight: 500;
     
  }
+ @media (max-width:991px){
+    header {
+        padding: 35px 50px;
+    }  
+    .navbar {
+        margin: 0 100px 0 200px;
+    
+    }
+    main {
+        padding: 193px;
+    }
+    .home {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 200px 30px;
+    }
+    .home #media-icons {
+        position: relative;
+        display: flex;
+        flex-direction:row;   
+         
+    }
+    .home #media-icons a img {
+        margin: 50px 150px;
+        
+        
+    }
+    .home #media-icons a img:hover {
+        background-color: #BC9AC8;
+    }
+     
+    
+     .home .content h1 {
+        font-size: 70px;
+
+     }
+
+ }
 
